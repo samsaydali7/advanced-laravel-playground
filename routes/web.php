@@ -19,3 +19,5 @@ Route::get('/orderShipped', function () {
     event(new \App\Events\OrderShipped(222));
     return 'ok';
 });
+
+Route::get('/compileReport', 'JobsController@index');
